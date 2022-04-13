@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <style>
+           #team {
+    background: #f9f9f9;
+  }
+
+  .team-thumb {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .team-info {
+    padding: 10px 30px 20px 30px;
+  }
+
+  .team-thumb .team-hover {
+    position: absolute;
+    background: #1c1c1c;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.5s 0.2s;
+  }
+
+  .team-thumb:hover .team-hover {
+    opacity: 0.95;
+    transition-delay: 0.3s;
+    transform: translateY(0);
+  }
+
+  .team-thumb img {
+    transition: 0.5s 0.2s;
+  }
+
+  .team-thumb:hover img {
+    transform: scale(1.2);
+  }
+
+  .team-thumb .social-icon li a {
+    background: #292929;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #d9d9d9;
+    font-size: 20px;
+    margin: 15px 5px 0 5px;
+  }
+
+  .team-thumb .team-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+
+  .team-item h4 {
+    color: #ffffff;
+  }
+
+  .team-info p {
+    color: #bfbdbd;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+
+
+
+  /*---------------------------------------
+     MENU              
+  -----------------------------------------*/
+
+  #menu {
+    padding-bottom: 0;
+  }
+
+  #menu .container {
+    width: 100%;
+  }
+
+  #menu .col-md-4 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-thumb img {
+    width: 100%;
+    transition: 0.5s;
+  }
+
+  .menu-thumb:hover img {
+    transform: scale(1.15);
+  }
+
+  #menu .menu-thumb {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    width: 102%;
+  }
+
+  .menu-thumb .menu-info {
+    position: absolute;
+    top: 60%;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: left;
+    padding: 25px 30px;
+    transition: 0.5s 0.2s;
+  }
+
+  .menu-info .menu-item {
+    float: left;
+  }
+
+  .menu-info .menu-price {
+    float: right;
+  }
+
+  .menu-info .menu-price span {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: normal;
+    display: block;
+    margin-top: 10px;
+  }
+
+  .menu-thumb .menu-info h3,
+  .menu-thumb .menu-info p,
+  .menu-thumb .menu-info span {
+    transform: translateY(100%);
+    opacity: 0;
+    display: block;
+    transition: 0.5s 0.2s;
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+  }
+
+  .menu-thumb .menu-info h3 {
+    margin-top: 0;
+  }
+
+  .menu-thumb .menu-info p {
+    color: #d9d9d9;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .menu-thumb:hover .menu-info h3,
+  .menu-thumb:hover .menu-info p,
+  .menu-thumb:hover .menu-info span {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  .menu-thumb:hover .menu-info {
+    background: rgba(0,0,0,0.8);
+  }
+
+
+     </style>
+</head>
+<body>
+     <section id="team" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                     
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
+                              <img src="team-image1.jpg" class="img-responsive" alt="">
+                                   <div class="team-hover">
+                                        <div class="team-item">
+                                             <h4>Duis vel lacus id magna mattis vehicula</h4> 
+                                             <ul class="social-icon">
+                                                  <li><a href="#" class="fa fa-linkedin-square"></a></li>
+                                                  <li><a href="#" class="fa fa-envelope-o"></a></li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.4s">
+                              <img src="team-image2.jpg" class="img-responsive" alt="">
+                                   <div class="team-hover">
+                                        <div class="team-item">
+                                             <h4>Cras suscipit neque quis odio feugiat</h4>
+                                             <ul class="social-icon">
+                                                  <li><a href="#" class="fa fa-instagram"></a></li>
+                                                  <li><a href="#" class="fa fa-flickr"></a></li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                         </div>
+                      </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="team-thumb wow fadeInUp" data-wow-delay="0.6s">
+                              <img src="team-image1.jpg" class="img-responsive" alt="">
+                                   <div class="team-hover">
+                                        <div class="team-item">
+                                             <h4>Etiam auctor enim tristique faucibus</h4>
+                                             <ul class="social-icon">
+                                                  <li><a href="#" class="fa fa-github"></a></li>
+                                                  <li><a href="#" class="fa fa-google"></a></li>
+                                             </ul>
+                                        </div>
+                                   </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+</body>
+</html>
